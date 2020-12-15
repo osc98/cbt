@@ -1,0 +1,282 @@
+body{
+	margin:0;
+	padding:0;
+	font-family:Helvetica,Arial,sans-serif;
+	color:#666000;
+	background-image:url( "../imgweb/foto2.jpg");
+	background-attachment:fixed;
+	font-size:14px;
+	line-height:21px;
+	padding-top:80px;
+}
+
+p{
+	margin:0 0 10px 0;
+	text-align:justify;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+h1.titulo{
+	font-family:Helvetica;
+	font-size:60px;
+	line-height:10px;
+	margin:15px 0;
+	text-align:center;
+	font-weight:300;
+	color:#DC6E2A;
+	text-shadow:1px 1px 2px black,0 0 25px red,0 0 5px darkblue;
+	padding:20px;
+}
+
+h1.titulodos{
+	font-family:Helvetica;
+	font-size:60px;
+	line-height:10px;
+	margin:15px 0;
+	text-align:center;
+	font-weight:300;
+	color:#A0C9DA;
+	text-shadow:1px 1px 2px black,0 0 25px red,0 0 5px darkblue;
+	padding:20px;
+}
+
+
+
+/*--------------------------------
+// Definición del encabezado
+/--------------------------------*/
+#main-header{
+
+	background-image:url( "../imgweb/foto7.jpg");
+	background-attachment:fixed;
+	color:#FFFFFF;
+	height:150px;
+	width:100%;
+	left:0;
+	top:0;
+	position:fixed;
+}
+
+.logo{
+	width:150px;
+	height:80px;
+	border:2px solid #C0C0C0;
+}
+
+.perfil{
+	width:180px;
+	height:140px;
+	border:3px solid #90EAAB;
+}
+
+#header-left{
+	width:20%;
+	height:80%;
+	float:left;
+}
+
+
+
+#header-left{
+	display:inline-block;
+}
+
+#header-right{
+	width:60%;
+	float:right;
+	font-size:13px;
+}
+
+
+.boton_sesion{
+	float:right;
+	margin-top:15px;
+	margin-right:15px;
+	text-decoration:none;
+	padding:5px;
+	font-weight:600;
+	font-size:12px;
+	color:#FFFFFF;
+	background:#1883BA;
+	border-radius:6px;
+	border-right:2px solid #0016B0;
+	border-bottom:2px solid #0016B0;
+}
+.boton_sesion:hover{
+	background:rgb(32,178,170);
+}
+
+/*-----------------------------
+// El menú de navegación
+------------------------------*/
+nav{
+	display:block;
+	width:900px;
+	margin:100px auto;
+	border:1px solid #FFFFFF;
+}
+
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background:#DAAB19;
+}
+nav > li{
+	float:left;
+}
+
+.lista{
+	float:left;
+}
+nav li:last-child{
+	border-right:none;
+}
+
+nav li a{
+	display:block;
+	color:#FFFFFF;
+	padding:10px 12px;
+	text-decoration:none;
+}
+
+nav li a:hover:not(.active){
+	background:#BF2605;
+}
+
+
+nav li ul{
+	display:none;
+	position:absolute;
+	min-width:140px;
+}
+nav li:hover > ul{
+	display:block;
+	text-decoration:none;
+	border:1px solid #FFFFFF;
+}
+nav li ul li{
+	position:relative;
+}
+nav li ul li ul{
+	right:-140px;
+	top:0px;
+}
+/*------------------------------------
+//  Definición de la sección de contenido
+//------------------------------------*/
+#main-contentuno{
+	background:#64DEBB;
+	max-width:900px;
+	width:90%;
+	margin:80px auto;
+	box-shadow:0 0 10px rgb(0,0,0,0.5);
+	padding-bottom:20px;
+}
+
+#main-contentuno header,
+#main-contentuno .content{
+	padding:20px;
+	
+}
+
+#main-contentuno img{
+	width:750px;
+	height:350px;
+}
+
+#main-contentdos{
+	max-width:900px;
+	width:90%;
+	margin:80px auto;
+	box-shadow:0 0 10px rgb(0,0,0,0.5);
+	padding-bottom:20px;
+	background-image:url( "../imgweb/foto5.jpg");
+	background-attachment:fixed;
+}
+
+#main-contentdos header,
+#main-contentdos .content{
+	padding:20px;
+	
+}
+
+#main-contentdos img{
+	width:750px;
+	height:350px;
+}
+
+/*--------------------------------
+// Definición de pie de página
+//-------------------------------------*/
+#main-footer p{
+	background:#000000;
+	color:#FFFFFF;
+	text-align:center;
+	padding:20px;
+	margin-top:40px;
+	height:150px;
+}
+#main-footer p{
+	margin:0px;
+}
+#main-footer .imglogo{
+	width:130px;
+	height:80px;
+}
+#main-footer a img:hover{
+	border:1px solid #FF0000;
+}
+
+.boton{
+	background:rgb(23,23,77);
+	color:rgb(255,255,255);
+	text-decoration:none;
+	padding:5px;
+	border:1px solid rgb(0,255,0);
+}
+
+.boton:hover{
+	color:rgb(0,255,0);
+	font-weight:bold;
+	cursor:pointer;
+}
+
+#tabla{
+	width:90%;
+	box-shadow:5px 5px 5px rgb(0,0,0,0.5);
+	margin:auto;
+	border:1px solid #C0C0C0;
+}
+
+#tabla table{
+	width:100%;
+}
+
+#tabla caption{
+	background:#C0C0C0;
+	color:#000000;
+	font-family:Helvetica;
+	font-size:20px;
+	height:40%;
+	padding-top:10px;
+	font-weight:bold;
+}
+
+#tabla td{
+	border-bottom:1px solid #C0C0C0;
+	color:#0000FF;
+}
+
+#tabla th{
+	background:#FFFF00;
+	color:#FF0000;
+}
+
+#tabla tr:hover{
+	color:#FF0000;
+}
