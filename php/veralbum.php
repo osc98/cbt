@@ -6,12 +6,6 @@ $mensaje="";
     $foto=$_SESSION['fotop'];
     $email=$_SESSION['userlogin'];
 	$nombusuario = $_SESSION['username'];	
-
-if(isset($_POST['btnAlbum'])){
-		$titulo=$_POST['titAlbum'];
-		$descripcion=$_POST['descripcion'];
-        $mensaje= crear_Album($idusuario,$titulo,$descripcion)	;
-	}
 ?>
 
 
@@ -64,7 +58,7 @@ if(isset($_POST['btnAlbum'])){
             ver_Album($idusuario);
             ?>
             </select>
-            <input type='submit' name='submit' value='Detalles'/></div>
+            <input type='submit' name='btnAlbum' value='Detalles'/></div>
         <?php
             $option = isset($_POST['albumcmb']) ? $_POST['albumcmb'] : false;
             if ($option) {

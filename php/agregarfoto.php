@@ -1,6 +1,6 @@
 <?php
 include("funciones.php");
-session_start();
+isset($_SESSION) || session_start();
 $mensaje="";		
     $idusuario=$_SESSION['idusuario'];
     $foto=$_SESSION['fotop'];
@@ -12,9 +12,10 @@ if(isset($_POST['btnFoto'])){
 		$tipo=$_POST['tipocmb'];
 		$fecha=$_POST['fechatomada'];
 		$pais=$_POST['pais'];
-		$fotoperfil=$_FILES['fotosubir'];
-		$idalbum=$_FILES['albumcmb'];
-        $mensaje= crear_Foto($titulo,$titulo,$descripcion)	;
+		$fotosubi=$_FILES['fotosubir'];
+		$idalbum=$_POST['albumcmb'];
+		$mensaje= crear_Foto($titulo,$tipo,$fecha,$pais,$_FILES['fotosubir']['name'],$idalbum);
+		$mensaje2= subir_Imagen($_FILES['fotosubir']['name'],$_FILES['fotosubir']['tmp_name'],$_FILES['fotosubir']['type'],$_FILES['fotosubir']['size'],'fotos');
 	}
 ?>
 
@@ -66,7 +67,7 @@ if(isset($_POST['btnFoto'])){
 					  <div class='formulario'>
 					   <h1 class='titform'>Subir Foto</h1>
 					   <hr>
-					    <form method='post' action='agregarfoto.php' enctype='multipart/form-data'>
+					    <form method='post' action='' enctype='multipart/form-data'>
 						
 						<div class='row'>
 						    <div class='col-25'>

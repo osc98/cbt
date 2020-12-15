@@ -22,7 +22,7 @@ if(isset($_POST['btnUsuario'])){
 		if (!empty($fotoperfil)) {
 			
 			$mensaje=NuevoUsu($nombusuario,$fechanac,$sexo,$pais,$email,$password,$_FILES['fotoperfil']['name']);
-			$mensaje2= subir_Imagen($_FILES['fotoperfil']['name'],$_FILES['fotoperfil']['tmp_name'],$_FILES['fotoperfil']['type'],$_FILES['fotoperfil']['size']);
+			$mensaje2= subir_Imagen($_FILES['fotoperfil']['name'],$_FILES['fotoperfil']['tmp_name'],$_FILES['fotoperfil']['type'],$_FILES['fotoperfil']['size'],'fotoperfiles');
 		}
 		else {
 			$mensaje=NuevoUsu($nombusuario,$fechanac,$sexo,$pais,$email,$password,'sinfoto.jpg');
